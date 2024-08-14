@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">NOIc</string>
+    <string name="i_agree_to_all_the_terms_and_condition">I agree to all the terms and condition</string>
+    <string name="submit">Submit</string>
+    <string name="state">State :</string>
+    <string name="others">others</string>
+
+</resources>

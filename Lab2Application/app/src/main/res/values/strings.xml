@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Lab2Application</string>
+    <string name="others">Others</string>
+    <string name="male">Male</string>
+    <string-array name="State">
+
+    </string-array>
+
+</resources>

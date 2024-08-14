@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login">
+    <?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Relative">
+        <TextView
+            android:id="@+id/txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Input Form"
+            android:textAlignment="center"
+            android:textSize="20dp"/>
+
+        <EditText
+            android:id="@+id/fname"
+            android:layout_below="@id/txt"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Full name"
+            android:drawableStart="@drawable/ic_user"
+            android:drawablePadding="10dp"
+            android:inputType="textPersonName"
+            />
+        <EditText
+            android:id="@id/email"
+            android:layout_below="@id/fname"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:drawableStart="@drawable/ic_email"
+            android:drawablePadding="10dp"
+
+            />
+        <EditText
+            android:id="@id/pass"
+            android:layout_below="@id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:drawableStart="@drawable/ic_password"
+            android:drawablePadding="10dp"
+            android:inputType=""
+            android:hint="Enter password"
+            />
+
+        <TextView
+            android:layout_below="@id/pass"
+            android:id="@+id/gentv"
+            android:layout_marginStart="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Gender :"
+            android:textSize="20dp"/>
+
+        <RadioGroup
+            android:id="@+id/genntv"
+            android:layout_below="@id/gentv"
+            android:layout_marginStart="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:tooltipText="Gender"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:id="@+id/mgen"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="20dp"
+                    android:text="Male"/>
+                <RadioButton
+                    android:id="@+id/fgen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="20dp"
+                    android:text="Female"/>
+                <RadioButton
+                    android:id="@+id/geno"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Others"/>
+            </LinearLayout>
+
+        </RadioGroup>
+        <TextView
+            android:id="@+id/st"
+            android:layout_below="@id/genntv"
+            android:layout_marginStart="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="State :"
+            android:textSize="20dp"/>
+
+        <Spinner
+            android:id="@+id/spn"
+            android:layout_below="@+id/st"
+            android:layout_marginStart="10dp"
+            android:textAlignment="center"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:spinnerMode="dropdown"
+            android:entries="@array/state"/>
+        <CheckBox
+            android:id="@+id/chkbtn"
+            android:layout_below="@+id/spn"
+            android:layout_marginStart="10dp"
+            android:textAlignment="center"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" I agree to all the terms and condition"/>
+        <Button
+            android:id="@+id/subbtn"
+            android:layout_below="@id/chkbtn"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit"/>
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ConstrainLayout"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Input Form"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+    </TextView>
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="Full Name"
+        app:layout_constraintTop_toBottomOf="@id/input"
+        android:drawableStart="@drawable/ic_user"
+        android:drawablePadding="10dp"></EditText>
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        app:layout_constraintTop_toBottomOf="@id/name"
+        android:drawableStart="@drawable/ic_email"
+        android:drawablePadding="10dp"></EditText>
+    <EditText
+        android:id="@+id/pass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        app:layout_constraintTop_toBottomOf="@id/email"
+        android:drawableStart="@drawable/ic_password"
+        android:drawablePadding="10dp"></EditText>
+    <TextView
+        android:id="@+id/gen"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Gender"
+        app:layout_constraintTop_toBottomOf="@+id/pass"
+        android:textSize="20dp"
+    <RadioGroup
+        android:id="@+id/radioRg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/gen"
+        android:orientation="horizontal"
+
+        app:layout_constraintStart_toStartOf="parent"
+        >
+
+        <RadioButton
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Male"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Female"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Others"/>
+
+    </RadioGroup>
+    <TextView
+        android:id="@+id/state"
+        app:layout_constraintTop_toBottomOf="@id/radioRg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="State"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"/>
+
+
+    <Spinner
+        android:id="@+id/statetv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:entries="@array/State"
+        app:layout_constraintStart_toEndOf="@id/state"
+        android:spinnerMode="dropdown"
+        tools:layout_editor_absoluteY="317dp" />
+    <CheckBox
+        android:id="@+id/policy"
+        android:layout_marginTop="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I agre to all the terms and condition"
+        app:layout_constraintTop_toBottomOf="@id/statetv"/>
+    <Button
+    android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@+id/policy"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">PopUp</string>
+    <string name="change_theme">Change Theme</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="logout">Logout</string>
+    <string name="setting">Setting</string>
+</resources>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app>
+    <servlet>
+        <servlet-name>SetCookiesServlet</servlet-name>
+        <servlet-class>SetCookiesServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SetCookiesServlet</servlet-name>
+        <url-pattern>/SetCookies</url-pattern>
+    </servlet-mapping>
+</web-app>
